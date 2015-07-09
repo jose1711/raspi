@@ -1,14 +1,19 @@
 =======================
 GPIO pinout cheat sheet
 =======================
+          latest update
+           July 9th '15
 
 -------------
 RaspberryPi 1
 -------------
 
+Note:
+Pin1 is leftmost pin in bottom row closest to SDcard slot 
+
 - tiny
 ....... 5 ...... 10 .....
-! ! G x x x G x x G x 8 7  R2
+! ! G x x x G x x G x 8 7  r2
 + 2 3 4 G x x x + x 9 x G
 
 ! = 5V      + = 3.3V
@@ -21,7 +26,7 @@ GPIO>9 = x  G = ground
 
 - compact
 ......................... 5 ........................... 10 ...................
-(5V ) (Gnd) (Gnd) (G14) (G15) (G18) (Gnd) (G23) (G24) (Gnd) (G25) (G08) (G07)   Rev. 2
+(5V ) (5V ) (Gnd) (G14) (G15) (G18) (Gnd) (G23) (G24) (Gnd) (G25) (G08) (G07)   Rev. 2
 (3V ) (G02) (G03) (G04) (Gnd) (G17) (G27) (G22) (3V ) (G10) (G09) (G11) (Gnd)
 
 - regular
@@ -44,3 +49,29 @@ GPIO>9 = x  G = ground
 \......../ \......../ \......../ \......../ \......../ \......../ \......../ \......../ \......../ \......../ \......../ \......../ \......../
   PIN1
 
+
+
+----------------
+RaspberryPi 2/B+
+----------------
+
+Note:
+Pin1 is leftmost pin in bottom row closest to (micro)SDcard slot 
+
+- tiny
+....... 5 ...... 10 ...... 15 ...... 20
+! ! G x x x G x x G x 8 7 x G x G x x x
++ 2 3 4 G x x x + x 9 x G x 5 6 x x x G
+
+! = 5V      + = 3.3V
+GPIO>9 = x  G = ground
+
+- small
+............ 5 ........... 10 ........... 15 ........... 20
+5V 5V Gn 14 15 18 Gn 23 24 Gn 25 08 07 SC Gn 12 Gn 16 20 21
+3V 02 03 04 Gn 17 27 22 3V 10 09 11 Gn SD 05 06 13 19 26 Gn
+
+- compact
+......................... 5 ........................... 10 ......................... 15 ........................... 20
+(5V ) (5V ) (Gnd) (G14) (G15) (G18) (Gnd) (G23) (G24) (Gnd) (G25) (G08) (G07) (SC ) (Gnd) (G12) (Gnd) (G16) (G20) (G21)
+(3V ) (G02) (G03) (G04) (Gnd) (G17) (G27) (G22) (3V ) (G10) (G09) (G11) (Gnd) (SD ) (G05) (G06) (G13) (G19) (G26) (Gnd)
