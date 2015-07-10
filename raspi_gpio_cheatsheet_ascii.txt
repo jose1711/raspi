@@ -2,7 +2,7 @@
 GPIO pinout cheat sheet
 =======================
           latest update
-           July 9th '15
+          July 10th '15
 
 -------------
 RaspberryPi 1
@@ -28,9 +28,9 @@ GPIO>9 = x  G = ground
 ⊕ 3.3V
 
 - tiny colored
-
+echo '....5....A'
 echo -e '\e[1;31m**\e[0mG\e[1;33m458\e[0mG\e[1;32m34\e[0mG\e[1;32m5\e[0m87'
-echo -e '\e[1;31m+\e[0m234G\e[1;33m7\e[0;32m72\e[1;31m+\e[1;33m0\e[0m9\e[1;33m1\e[0mG'
+echo -e '\e[1;31m+\e[0m234G\e[1;33m7\e[1;32m72\e[1;31m+\e[1;33m0\e[0m9\e[1;33m1\e[0mG'
 
 normal - 0x
 yellow - 1x
@@ -42,10 +42,6 @@ G      - ground
 ............ 5 ........... 10 ........
 5V 5V Gn 14 15 18 Gn 23 24 Gn 25 08 07  Rev2
 3V 02 03 04 Gn 17 27 22 3V 10 09 11 Gn
-
-**G458G34G587
-+234G772+091G
-
 
 - compact
 ......................... 5 ........................... 10 ...................
@@ -86,6 +82,19 @@ Pin1 is leftmost pin in bottom row closest to (micro)SDcard slot
 
 ! = 5V      + = 3.3V
 GPIO>9 = x  G = ground
+
+- tiny colored
+echo '....5....A....F'
+echo -e '\e[1;31m**\e[0mG\e[1;33m458\e[0mG\e[1;32m34\e[0mG\e[1;32m5\e[0m87SG\e[1;33m2\e[0mG\e[1;33m6\e[1;32m01'
+echo -e '\e[1;31m+\e[0m234G\e[1;33m7\e[1;32m72\e[1;31m+\e[1;33m0\e[0m9\e[1;33m1\e[0mGs56\e[1;33m39\e[1;32m6\e[0mG'
+
+normal - 0x
+yellow - 1x
+green  - 2x
+red    - dc power (* = 5V, + = 3.3V)
+G      - ground
+S      - sc
+s      - sd
 
 - small
 ............ 5 ........... 10 ........... 15 ........... 20
